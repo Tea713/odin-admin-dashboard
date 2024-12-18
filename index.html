@@ -1,16 +1,361 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <div id="side-nav"></div>
-    <div id="header"></div>
-    <div id="main"></div>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="icon">
+        <img
+          src="assets/images/view-dashboard.svg"
+          alt="dashboard-icon"
+          class="lg-icon"
+        />
+        <span>Dashboard</span>
+      </div>
+      <ul id="user-nav" class="side-nav">
+        <li>
+          <a href="">
+            <img src="assets/images/home.svg" alt="home-icon" class="md-icon" />
+            Home</a
+          >
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="assets/images/card-account-details-outline.svg"
+              alt="profile-icon"
+              class="md-icon"
+            />
+            Profile</a
+          >
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="assets/images/message-reply.svg"
+              alt="messages-icon"
+              class="md-icon"
+            />
+            Messages</a
+          >
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="assets/images/clock-time-three.svg"
+              alt="history-icon"
+              class="md-icon"
+            />
+            History</a
+          >
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="assets/images/note-multiple.svg"
+              alt="task-icon"
+              class="md-icon"
+            />
+            Tasks</a
+          >
+        </li>
+        <li>
+          <img
+            src="assets/images/account-group.svg"
+            alt="communities-icon"
+            class="md-icon"
+          />
+          <a href="">Communities</a>
+        </li>
+      </ul>
+      <ul id="page-nav" class="side-nav">
+        <li>
+          <a href="">
+            <img
+              src="assets/images/cog.svg"
+              alt="settings-icon"
+              class="md-icon"
+            />
+            Settings</a
+          >
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="assets/images/help-box.svg"
+              alt="support-icon"
+              class="md-icon"
+            />
+            Support</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="assets/images/shield-check.svg"
+              alt="privacy-icon"
+              class="md-icon"
+            />Privacy</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div id="header">
+      <div id="search">
+        <img
+          src="assets/images/magnify.svg"
+          alt="search-icon"
+          class="md-icon"
+        />
+        <input type="text" id="search-input" />
+      </div>
+      <div id="user-info">
+        <button>
+          <img
+            src="assets/images/bell-ring-outline.svg"
+            alt="notification-icon"
+            class="md-icon"
+          />
+        </button>
+        <button>
+          <img src="" alt="profile picture" class="md-profile-pic" />
+          <span id="username">Morgan Oakley</span>
+        </button>
+      </div>
+      <div id="greeting">
+        <img src="" alt="profile picture" class="lg-profile-pic" />
+        <p>Hi there,</p>
+        <h2>Morgan Oakley (@morgan)</h2>
+      </div>
+      <ul id="dashboard-func">
+        <li><button>New</button></li>
+        <li><button>Upload</button></li>
+        <li><button>Share</button></li>
+      </ul>
+    </div>
+    <div id="main">
+      <h2 class="section-head">Your Projects</h2>
+      <div id="prj-board">
+        <div class="prj-card">
+          <h2 class="prj-title">Project Alpha</h2>
+          <p class="prj-desc">
+            A project to develop a new feature for our app, aiming to enhance
+            user engagement and satisfaction. This will involve extensive user
+            testing and feedback.
+          </p>
+          <div prj-func="">
+            <button>
+              <img
+                src="assets/images/star-plus-outline.svg"
+                alt="fav-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/eye-plus-outline.svg"
+                alt="visibility-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/source-fork.svg"
+                alt="share-icon"
+                class="sm-icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="prj-card">
+          <h2 class="prj-title">Project Beta</h2>
+          <p class="prj-desc">
+            An initiative to improve user experience by redesigning the
+            interface and streamlining navigation.
+          </p>
+          <div prj-func="">
+            <button>
+              <img
+                src="assets/images/star-plus-outline.svg"
+                alt="fav-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/eye-plus-outline.svg"
+                alt="visibility-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/source-fork.svg"
+                alt="share-icon"
+                class="sm-icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="prj-card">
+          <h2 class="prj-title">Project Gamma</h2>
+          <p class="prj-desc">
+            A research project on market trends to identify new opportunities
+            and potential areas for growth. The findings will guide our
+            strategic planning for the next fiscal year.
+          </p>
+          <div prj-func="">
+            <button>
+              <img
+                src="assets/images/star-plus-outline.svg"
+                alt="fav-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/eye-plus-outline.svg"
+                alt="visibility-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/source-fork.svg"
+                alt="share-icon"
+                class="sm-icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="prj-card">
+          <h2 class="prj-title">Project Delta</h2>
+          <p class="prj-desc">
+            A task to optimize backend performance, focusing on reducing server
+            response times and improving scalability.
+          </p>
+          <div prj-func="">
+            <button>
+              <img
+                src="assets/images/star-plus-outline.svg"
+                alt="fav-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/eye-plus-outline.svg"
+                alt="visibility-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/source-fork.svg"
+                alt="share-icon"
+                class="sm-icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="prj-card">
+          <h2 class="prj-title">Project Epsilon</h2>
+          <p class="prj-desc">
+            A project to enhance security protocols, ensuring data protection
+            and compliance with industry standards. This will include regular
+            audits and updates to our security measures.
+          </p>
+          <div prj-func="">
+            <button>
+              <img
+                src="assets/images/star-plus-outline.svg"
+                alt="fav-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/eye-plus-outline.svg"
+                alt="visibility-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/source-fork.svg"
+                alt="share-icon"
+                class="sm-icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="prj-card">
+          <h2 class="prj-title">Project Zeta</h2>
+          <p class="prj-desc">
+            A campaign to boost social media presence through targeted content
+            and engagement strategies.
+          </p>
+          <div prj-func="">
+            <button>
+              <img
+                src="assets/images/star-plus-outline.svg"
+                alt="fav-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/eye-plus-outline.svg"
+                alt="visibility-icon"
+                class="sm-icon"
+              /></button
+            ><button>
+              <img
+                src="assets/images/source-fork.svg"
+                alt="share-icon"
+                class="sm-icon"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="annoucement">
+        <h2 class="section-head">Announcements</h2>
+        <div id="announcement-board">
+          <div class="announcement">
+            <h3 class="announcement-title">System Maintenance</h3>
+            <p class="announcement-desc">Our system will undergo maintenance on Saturday from 2 AM to 4 AM. Please save your work and log out before this time to avoid any data loss.</p>
+          </div>
+          <div class="announcement">
+            <h3 class="announcement-title">New Feature Release</h3>
+            <p class="announcement-desc">We are excited to announce the release of our new feature that enhances user collaboration. This feature allows for real-time editing and feedback, making teamwork more efficient. Check it out in the Projects section.</p>
+          </div>
+          <div class="announcement">
+            <h3 class="announcement-title">Holiday Schedule</h3>
+            <p class="announcement-desc">Our office will be closed for the holidays from December 24th to January 2nd. We wish you a happy holiday season! During this period, support will be limited, so please plan accordingly.</p>
+          </div>
+        </div>
+      </div>
+      <div id="trending">
+        <h2 class="section-head">Trending</h2>
+        <ul id="trending-board">
+          <li class="trending-profile">
+            <img src="" alt="" class="md-profile-pic">
+            <p class="trending-user">@tegan</p>
+            <p class="trending-prj">World Peace Builder</p>
+          </li>
+          <li class="trending-profile">
+            <img src="" alt="" class="md-profile-pic">
+            <p class="trending-user">@morgan</p>
+            <p class="trending-prj">Project Alpha</p>
+          </li>
+          <li class="trending-profile">
+            <img src="" alt="" class="md-profile-pic">
+            <p class="trending-user">@kendall</p>
+            <p class="trending-prj">Life Changing App</p>
+          </li>
+          <li class="trending-profile">
+            <img src="" alt="" class="md-profile-pic">
+            <p class="trending-user">@alex</p>
+            <p class="trending-prj">No Traffic Maker</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
